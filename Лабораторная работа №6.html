@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Лабораторная работа №6</title>
+</head>
+<script>
+	function Background(){
+    	var A = document.getElementById("A").value
+		document.body.style.background = A;
+	}
+	function Text(){
+		var B = document.getElementById("B").value
+		var textcolor = document.getElementById("tc")
+		textcolor.style.color = B;
+	}
+	function Link(){
+		var C = document.getElementById("C").value
+		var link = document.getElementById("link")
+		link.href = C;
+	}
+</script>
+<body>
+	<lable class= "control-lable"> Введите цвет страницы</lable><br>
+    <input type="text" name = "background" id="A">
+    <button id="butt" onclick="Background()">Ок</button>
+    <br>
+    <br>
+    <lable class= "control-lable" > Введите цвет текста</lable><br>
+    <input type="text" name = "text" id="B">
+    <button id="butt" onclick="Text()">Ок</button>
+    <p id = "tc">
+    	Кто умеет радоваться чужому счастью, тот тоже получит что-то хорошее. Кусочек счастья, как кусок праздничного торта; почему бы и нет? Счастья хватит на всех. Главное — ему порадоваться, даже если грустно. И оно обратит на нас внимание...
+    </p>
+    <br>
+    <lable class= "control-lable" > Вставьте ссылку на сайт</lable><br>
+    <input type="text" name = "link" id="C">
+    <button id="butt" onclick="Link()">Ок</button><br>
+    <a id = "link" href="#">Я ссылка</a>
+</body>
+</html>
